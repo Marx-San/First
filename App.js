@@ -27,6 +27,14 @@ export default class App extends React.Component{
     low_price:null
   }
 
+  constructor(props){
+    super(props);
+    var response = fetch(api_url,requestOptions);
+    var data = response.json();
+    this.setState({high_price:data.high_price});
+    this.setState({low_price:data.low_price});
+  }
+
   async componentDidMount(){
     setInterval(async () => {
       console.log('1');
