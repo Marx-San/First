@@ -17,7 +17,7 @@ var requestOptions = {
 
 const api_url = 'https://www.goldapi.io/api/XAU/INR';
 
-let count = 0;
+//let count = 0;
 
 export default class App extends React.Component{
 
@@ -37,7 +37,7 @@ export default class App extends React.Component{
 
   async componentDidMount(){
     setInterval(async () => {
-      console.log('1');
+      //console.log('1');  //Testing for recurrence
       var response =  await fetch(api_url,requestOptions);
       var data = await response.json();
 
