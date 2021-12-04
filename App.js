@@ -6,7 +6,7 @@ import { StyleSheet, Text, View, ActivityIndicator } from 'react-native';
 console.log("New");
 
 var myHeaders = new Headers();
-myHeaders.append("x-access-token", "goldapi-xjk0natkwrpbh8a-io");
+myHeaders.append("x-access-token", "goldapi-xjk0natkwrpbh8a-io"); //Change api-id
 myHeaders.append("Content-Type", "application/json");
 
 var requestOptions = {
